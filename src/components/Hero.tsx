@@ -26,7 +26,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-display-xl text-display-xl text-on-surface leading-tight mb-8"
         >
-          Raffiner la <span className="italic font-light text-stroke">Complexité</span> <br/>en Stratégie
+          Optimisez votre <span className="italic font-light text-stroke">Capital</span> <br/>et votre Croissance
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -34,7 +34,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12"
         >
-          Nous fusionnons la rigueur analytique et l'élégance architecturale pour sculpter des trajectoires de croissance pérennes au cœur des marchés les plus exigeants.
+          Conseil stratégique en placements financiers, immobilier et développement d'entreprise. Nous transformons vos problématiques en leviers de performance.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
