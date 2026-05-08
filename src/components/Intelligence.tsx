@@ -44,7 +44,7 @@ const Intelligence = () => {
               className="relative aspect-square border border-tertiary/30 p-4"
             >
               <div className="absolute inset-0 m-8 border border-tertiary/10"></div>
-              <img className="w-full h-full object-cover" alt="Skyscraper at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAROq6a3J1Ad-kjg9FRCtVTYzZRMc7C9S5CD-1VOL1KQOLittKPcfifDlf1IUS9gq1K4r0HRQFUwQv7gaZNUOtW7V0qsxCfw2dJIrV7CdhJmwRRyJlxutvBk82lMoMsyaSW41kv3FqMse1w7-jYlOFmiw5eqJCUl6K9LegvyDyLJo4RxpkWkKPL3q1BlPPkEXqNvkW2GOBpq0jE15oze8KnWVKhyaBhMmQsNpwracD4nwP5VLpLfEplQh-00AQD2thkQtxHwBx4otY"/>
+              <img className="w-full h-full object-cover" alt="Skyscraper at night" src="/assets/images/inte.png"/>
             </motion.div>
           </div>
         </motion.div>

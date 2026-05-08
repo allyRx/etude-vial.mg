@@ -22,7 +22,7 @@ const DomainFocus = () => {
             transition={{ duration: 0.6 }}
             className="col-span-12 md:col-span-7 group relative overflow-hidden h-[500px]"
           >
-            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110 grayscale hover:grayscale-0" alt="Restaurant interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHYfhcH3EVBRSqNlRzkabHV6F-DxKgQ7YT-cllqfBI1wyGFI8oiyZn1ZJaIZkO5ruKygi7Th2mPu7eowL3qDeH8bSX_4CdhmxWMcFlyq5nSmZNtfwQnhH9TiKq-_brxzfMGhgpqdP8aYI6j_uu2fDF4QtL1HcmZN_fJCkaun7bjth8QhMN5iDvObeTTCImjGVaEsT28iIhNUrA7P38-UpwrQHtU20w6xVxYp0F--bKujcF3yi_sqCZwyFpWLTVeqls-XG7EWVfOm4"/>
+            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110 grayscale hover:grayscale-0" alt="Restaurant interior" src="/assets/images/res.png"/>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-0 left-0 p-12">
               <span className="font-label-caps text-label-caps text-tertiary uppercase mb-4 block">Hôtellerie Gastronomique</span>
@@ -38,7 +38,7 @@ const DomainFocus = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="col-span-12 md:col-span-5 group relative overflow-hidden h-[500px]"
           >
-            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110 grayscale hover:grayscale-0" alt="Hotel lobby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOZeqZqh0rTbtPuNdold0ZxedJsePLn7BGARSaXszIbrz4sEr1xTqFkWfWXdzlg9C4XwwewhmWXo18NuavwtagxyBvMxf6ZOMAEfCQqJ0SElnwBRYkm2QfHPWhoezIlJEHuyMNqShr6nUYPDIP_cTGAceRrc6BNfgdoSD4Ntn0ejQuD0Sb9_x9z85GmesWwNkGf60mMjskFgFdBivbSuFJ3VR3BSAvdmMaF9838li_OEkUUA4wiGfjUidHrJW9nocp2lXQoVyIo_M"/>
+            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110 grayscale hover:grayscale-0" alt="Hotel lobby" src="/assets/images/hot.png"/>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-0 left-0 p-12">
               <span className="font-label-caps text-label-caps text-tertiary uppercase mb-4 block">Destination de Luxe</span>
@@ -54,7 +54,7 @@ const DomainFocus = () => {
             transition={{ duration: 0.8 }}
             className="col-span-12 group relative overflow-hidden h-[400px]"
           >
-            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105 grayscale hover:grayscale-0" alt="Flagship store" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY7ji5iRWOFBr5a2abKAi55XrmHwX-C2eIPIiHbKKeuk--sn-gLF4-72n5uW4CBk-Ni1M2wHS1YAa3ayruc8JMBqfvIrGs986fmSE0zeLAvMM_o-KFCKroe922rIexkMPhiDZcofkNPlRe_EInXvqRiySS8CURzsM2ZnjzTIkBNG3NdvB52bWBREf7y1juI8VZr4XTtHcWTFwP3YQefQH51fP0ErZ_S0ecM6hbCU4sdrl6kk9AsRjvVE-UkAASifRhTKIEHE3nHMg"/>
+            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105 grayscale hover:grayscale-0" alt="Flagship store" src="/assets/images/com.png"/>
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-12 flex flex-col md:flex-row md:items-end justify-between w-full">
               <div>

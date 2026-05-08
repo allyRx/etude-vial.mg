@@ -7,7 +7,7 @@ const Hero = () => {
         <img
           className="w-full h-full object-cover grayscale opacity-40"
           alt="A low-angle shot of a majestic, modern glass and steel skyscraper reaching toward a dark twilight sky."
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-1p1PV2UWSfp5Y-UmggdRYlqcfg47S9yQomafOwhkLkHi88lOc65uUPFMFnXpu7fmy7IOBVwUCU3iEdBdnf1fEDnY_DnCtzIiDCIbHiliVtZUTUb6yWiEztYp7Ygu7CvjY4An-V8kexJ6ns8nOo23JDqo7RHe9HanpBt8KRYPCoh-Zcq_P-fwO9OJw2jf64jV7NBegYIlZH3ZKEMyrIAWODMjJT24BCGuVDXmNMt3-mA0QnV3Ws92Sf__OY-MvZ0gmntcH3oOVLI"
+          src="/assets/images/hero.png"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background"></div>
       </div>
