@@ -48,21 +48,21 @@ const StrategicServices = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-gutter"
         >
           <motion.div variants={item} className="glass-panel p-10 border border-outline-variant/20 hover:border-tertiary/40 transition-colors">
-            <span className="material-symbols-outlined text-tertiary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>analytics</span>
-            <h5 className="font-headline-sm text-headline-sm text-on-surface mb-4">Analyse de Marché</h5>
-            <p className="font-body-md text-body-md text-on-surface-variant mb-6">Décryptage des tendances macro-économiques et micro-sectorielles avec une précision chirurgicale.</p>
-            <div className="h-[1px] w-full bg-outline-variant/30"></div>
-          </motion.div>
-          <motion.div variants={item} className="glass-panel p-10 border border-outline-variant/20 hover:border-tertiary/40 transition-colors">
             <span className="material-symbols-outlined text-tertiary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>account_balance</span>
-            <h5 className="font-headline-sm text-headline-sm text-on-surface mb-4">Asset Management</h5>
-            <p className="font-body-md text-body-md text-on-surface-variant mb-6">Gestion dynamique et sécurisée de portefeuilles immobiliers commerciaux et résidentiels de luxe.</p>
+            <h5 className="font-headline-sm text-headline-sm text-on-surface mb-4">Conseil en Placement</h5>
+            <p className="font-body-md text-body-md text-on-surface-variant mb-6">Optimisation de votre capital via des placements financiers rigoureux et des stratégies immobilières à haute valeur ajoutée.</p>
             <div className="h-[1px] w-full bg-outline-variant/30"></div>
           </motion.div>
           <motion.div variants={item} className="glass-panel p-10 border border-outline-variant/20 hover:border-tertiary/40 transition-colors">
-            <span className="material-symbols-outlined text-tertiary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>payments</span>
-            <h5 className="font-headline-sm text-headline-sm text-on-surface mb-4">Capital-Risque</h5>
-            <p className="font-body-md text-body-md text-on-surface-variant mb-6">Accompagnement dans les levées de fonds et la structuration du capital pour projets disruptifs.</p>
+            <span className="material-symbols-outlined text-tertiary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>trending_up</span>
+            <h5 className="font-headline-sm text-headline-sm text-on-surface mb-4">Développement</h5>
+            <p className="font-body-md text-body-md text-on-surface-variant mb-6">Accompagnement stratégique pour la croissance de votre entreprise, de la vision à l'exécution sur le terrain.</p>
+            <div className="h-[1px] w-full bg-outline-variant/30"></div>
+          </motion.div>
+          <motion.div variants={item} className="glass-panel p-10 border border-outline-variant/20 hover:border-tertiary/40 transition-colors">
+            <span className="material-symbols-outlined text-tertiary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+            <h5 className="font-headline-sm text-headline-sm text-on-surface mb-4">Résolution de Problèmes</h5>
+            <p className="font-body-md text-body-md text-on-surface-variant mb-6">Identification précise des points de blocage opérationnels dans l'hôtellerie, la restauration et le commerce.</p>
             <div className="h-[1px] w-full bg-outline-variant/30"></div>
           </motion.div>
         </motion.div>

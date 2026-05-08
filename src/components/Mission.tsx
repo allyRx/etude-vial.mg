@@ -12,11 +12,11 @@ const Mission = () => {
       >
         <span className="font-label-caps text-label-caps text-tertiary uppercase mb-8 block">Notre Manifeste</span>
         <h2 className="font-display-lg text-display-lg text-on-surface mb-12">
-          Architectes de clarté dans un paysage complexe.
+          Cibler vos problèmes, concevoir vos solutions.
         </h2>
         <div className="h-1 w-24 bg-tertiary mb-12"></div>
         <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-          Chez Étude Viale, nous ne nous contentons pas de conseiller ; nous concevons des structures de décision. Chaque stratégie est une pièce d'orfèvrerie, taillée pour répondre aux pressions structurelles et aux opportunités volatiles de l'économie mondiale. Nous croyons en la permanence du sens et l'impact de la précision.
+          Nos équipes sont dédiées à la compréhension profonde de vos problématiques sectorielles. Que vous soyez un restaurant, un hôtel, une entreprise ou un commerce, nous identifions les points de friction pour instaurer une efficacité opérationnelle et financière durable.
         </p>
       </motion.div>
       <motion.div

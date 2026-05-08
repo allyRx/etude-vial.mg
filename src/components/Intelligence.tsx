@@ -15,23 +15,23 @@ const Intelligence = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <span className="font-label-caps text-tertiary mb-4 block uppercase">Intelligence Économique</span>
-              <h2 className="font-display-lg text-display-lg text-on-surface mb-8">Ingénierie du Capital & Stratégie Immobilière</h2>
+              <h2 className="font-display-lg text-display-lg text-on-surface mb-8">Expertise en Placement & Développement</h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-12">
-                Nous déployons des structures de capital sophistiquées pour sécuriser et faire croître les patrimoines institutionnels. Notre accès privilégié aux marchés immobiliers "off-market" garantit à nos clients des opportunités d'une rareté absolue.
+                Nous offrons des conseils sur-mesure pour vos placements sur les marchés financiers et immobiliers. Notre approche pragmatique aide les entrepreneurs à développer leur structure avec une vision claire.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <span className="material-symbols-outlined text-tertiary" style={{ fontVariationSettings: "'FILL' 1" }}>account_balance</span>
                   <div>
-                    <h5 className="font-label-caps text-on-surface uppercase">Fusion-Acquisition</h5>
-                    <p className="text-sm text-on-surface-variant">Arbitrages stratégiques et due diligence multidimensionnelle.</p>
+                    <h5 className="font-label-caps text-on-surface uppercase">Gestion de Patrimoine</h5>
+                    <p className="text-sm text-on-surface-variant">Conseils stratégiques pour faire fructifier votre capital dans l'immobilier et la finance.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="material-symbols-outlined text-tertiary" style={{ fontVariationSettings: "'FILL' 1" }}>domain</span>
+                  <span className="material-symbols-outlined text-tertiary" style={{ fontVariationSettings: "'FILL' 1" }}>storefront</span>
                   <div>
-                    <h5 className="font-label-caps text-on-surface uppercase">Gestion d'Actifs Réels</h5>
-                    <p className="text-sm text-on-surface-variant">Optimisation de portefeuilles immobiliers de prestige à l'échelle mondiale.</p>
+                    <h5 className="font-label-caps text-on-surface uppercase">Croissance PME & Commerces</h5>
+                    <p className="text-sm text-on-surface-variant">Solutions concrètes pour le développement d'entreprises et de commerces de proximité.</p>
                   </div>
                 </div>
               </div>
