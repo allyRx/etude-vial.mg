@@ -1,4 +1,6 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
+import InternalLink from './InternalLink'
+import { ROUTES } from '../lib/routes'
 
 const Hero = () => {
   return (
@@ -42,13 +44,16 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex justify-center gap-gutter"
         >
-          <button className="bg-tertiary text-on-tertiary px-10 py-4 font-label-caps text-label-caps hover:scale-105 transition-all">
-            EXPLORER NOTRE VISION
-          </button>
+          <InternalLink
+            to={ROUTES.services}
+            className="bg-tertiary text-on-tertiary px-10 py-4 font-label-caps text-label-caps hover:scale-105 transition-all"
+          >
+            EXPLORER NOS SERVICES
+          </InternalLink>
         </motion.div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

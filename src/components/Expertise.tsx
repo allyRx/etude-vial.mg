@@ -1,4 +1,8 @@
 import { motion } from 'framer-motion';
+import InternalLink from './InternalLink';
+import { ROUTES } from '../lib/routes';
+
+const MotionInternalLink = motion(InternalLink);
 
 const Expertise = () => {
   return (
@@ -13,15 +17,15 @@ const Expertise = () => {
             <span className="font-label-caps text-tertiary mb-4 block uppercase">Expertise Sectorielle</span>
             <h2 className="font-display-lg text-display-lg text-on-surface">Domaines d'Influence</h2>
           </motion.div>
-          <motion.a
+          <MotionInternalLink
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             className="font-label-caps text-on-surface-variant border-b border-tertiary/40 pb-2 hover:text-tertiary transition-all"
-            href="#"
+            to={ROUTES.services}
           >
             Consulter les secteurs
-          </motion.a>
+          </MotionInternalLink>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 h-[800px]">
           {/* Hôtellerie & Restauration */}

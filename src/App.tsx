@@ -1,28 +1,33 @@
+import { useEffect } from 'react'
+import type { ReactNode } from 'react'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Mission from './components/Mission'
-import DomainFocus from './components/DomainFocus'
-import StrategicServices from './components/StrategicServices'
-import Expertise from './components/Expertise'
-import Philosophy from './components/Philosophy'
-import Intelligence from './components/Intelligence'
-import CTA from './components/CTA'
 import Footer from './components/Footer'
+import { usePathname } from './lib/router'
+import { ROUTES } from './lib/routes'
+import HomePage from './pages/HomePage'
+import ServicesPage from './pages/ServicesPage'
+import ContactPage from './pages/ContactPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
+  const pathname = usePathname()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [pathname])
+
+  const pages: Record<string, ReactNode> = {
+    [ROUTES.home]: <HomePage />,
+    [ROUTES.services]: <ServicesPage />,
+    [ROUTES.contact]: <ContactPage />,
+  }
+
+  const page = pages[pathname] || <NotFoundPage />
+
   return (
     <div className="bg-background text-on-surface min-h-screen">
       <Navbar />
-      <main>
-        <Hero />
-        <Mission />
-        <DomainFocus />
-        <StrategicServices />
-        <Expertise />
-        <Philosophy />
-        <Intelligence />
-        <CTA />
-      </main>
+      {page}
       <Footer />
     </div>
   )

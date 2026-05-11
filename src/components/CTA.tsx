@@ -1,4 +1,6 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
+import InternalLink from './InternalLink'
+import { ROUTES } from '../lib/routes'
 
 const CTA = () => {
   return (
@@ -34,16 +36,22 @@ const CTA = () => {
           transition={{ delay: 0.2 }}
           className="flex flex-col md:flex-row justify-center items-center gap-gutter"
         >
-          <button className="bg-tertiary text-on-tertiary px-12 py-5 font-label-caps text-label-caps hover:bg-tertiary-fixed transition-all uppercase tracking-widest text-lg">
+          <InternalLink
+            to={ROUTES.contact}
+            className="bg-tertiary text-on-tertiary px-12 py-5 font-label-caps text-label-caps hover:bg-tertiary-fixed transition-all uppercase tracking-widest text-lg"
+          >
             Demander un Briefing
-          </button>
-          <a className="font-label-caps text-label-caps text-on-surface border-b border-on-surface pb-1 uppercase tracking-widest hover:text-tertiary hover:border-tertiary transition-colors" href="#">
-            Voir nos études de cas
-          </a>
+          </InternalLink>
+          <InternalLink
+            className="font-label-caps text-label-caps text-on-surface border-b border-on-surface pb-1 uppercase tracking-widest hover:text-tertiary hover:border-tertiary transition-colors"
+            to={ROUTES.services}
+          >
+            Voir nos services
+          </InternalLink>
         </motion.div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CTA;
+export default CTA
