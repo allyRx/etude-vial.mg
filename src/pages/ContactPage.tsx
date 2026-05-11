@@ -160,7 +160,7 @@ const ContactPage = () => {
           <img
             className="w-full h-full object-cover grayscale brightness-50"
             alt="An expansive, luxury interior of a private gallery or atelier with vast stone walls and soaring ceilings."
-            src="/assets/images/Gemini_Generated_Image_qwuummqwuummqwuu.png"
+            src="/assets/images/com.png"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="max-w-2xl text-center px-8">
