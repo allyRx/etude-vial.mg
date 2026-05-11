@@ -6,6 +6,7 @@ import { usePathname } from './lib/router'
 import { ROUTES } from './lib/routes'
 import HomePage from './pages/HomePage'
 import ServicesPage from './pages/ServicesPage'
+import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import NotFoundPage from './pages/NotFoundPage'
 
@@ -18,6 +19,7 @@ function App() {
 
   const pages: Record<string, ReactNode> = {
     [ROUTES.home]: <HomePage />,
+    [ROUTES.about]: <AboutPage />,
     [ROUTES.services]: <ServicesPage />,
     [ROUTES.contact]: <ContactPage />,
   }

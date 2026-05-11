@@ -16,6 +16,7 @@ const Navbar = () => {
         </InternalLink>
         <div className="hidden md:flex gap-gutter items-center">
           <InternalLink className="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-tertiary transition-colors duration-animation-duration-slow ease-animation-curve" to={ROUTES.home}>Accueil</InternalLink>
+          <InternalLink className="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-tertiary transition-colors duration-animation-duration-slow ease-animation-curve" to={ROUTES.about}>À Propos</InternalLink>
           <InternalLink className="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-tertiary transition-colors duration-animation-duration-slow ease-animation-curve" to={ROUTES.services}>Services</InternalLink>
           <InternalLink className="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-tertiary transition-colors duration-animation-duration-slow ease-animation-curve" to={ROUTES.contact}>Contact</InternalLink>
         </div>

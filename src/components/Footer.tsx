@@ -16,6 +16,8 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-x-24 gap-y-8">
           <div className="flex flex-col gap-4">
             <span className="font-label-caps text-label-caps text-tertiary mb-2">Navigation</span>
+            <InternalLink className="font-label-caps text-label-caps text-on-surface-variant/60 hover:text-tertiary transition-opacity opacity-80 hover:opacity-100" to={ROUTES.home}>Accueil</InternalLink>
+            <InternalLink className="font-label-caps text-label-caps text-on-surface-variant/60 hover:text-tertiary transition-opacity opacity-80 hover:opacity-100" to={ROUTES.about}>À Propos</InternalLink>
             <InternalLink className="font-label-caps text-label-caps text-on-surface-variant/60 hover:text-tertiary transition-opacity opacity-80 hover:opacity-100" to={ROUTES.services}>Services</InternalLink>
             <InternalLink className="font-label-caps text-label-caps text-on-surface-variant/60 hover:text-tertiary transition-opacity opacity-80 hover:opacity-100" to={ROUTES.contact}>Contact</InternalLink>
           </div>
