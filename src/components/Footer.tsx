@@ -2,8 +2,6 @@ import InternalLink from './InternalLink'
 import { ROUTES } from '../lib/routes'
 
 const Footer = () => {
-  const year = new Date().getFullYear()
-
   return (
     <footer className="bg-surface py-20 border-t border-outline-variant/20">
       <div className="max-w-container-max mx-auto px-6 md:px-margin-edge">
