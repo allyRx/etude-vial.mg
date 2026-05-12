@@ -5,38 +5,50 @@ import { ROUTES } from '../lib/routes'
 const serviceSteps = [
   {
     number: '01',
-    title: 'Immersion',
-    text: 'Compréhension profonde de votre ADN d’activité et de vos enjeux spécifiques.',
+    title: 'Écoute',
+    text: 'Nous prenons le temps de comprendre votre activité, vos contraintes et vos ambitions avant toute recommandation.',
   },
   {
     number: '02',
     title: 'Diagnostic',
-    text: 'Analyse granulaire des données et identification des leviers de performance.',
+    text: 'Analyse approfondie de votre situation : finances, organisation, marché, pour identifier précisément les leviers d\'action.',
   },
   {
     number: '03',
     title: 'Stratégie',
-    text: "Élaboration d'une feuille de route architecturale vers vos objectifs.",
+    text: 'Élaboration d\'un plan d\'action concret, chiffré et adapté à votre réalité opérationnelle et à vos objectifs.',
   },
   {
     number: '04',
-    title: 'Exécution',
-    text: 'Accompagnement opérationnel pour une mise en œuvre sans compromis.',
+    title: 'Suivi',
+    text: 'Accompagnement dans la mise en œuvre et ajustement continu pour garantir des résultats mesurables et durables.',
   },
 ]
 
 const serviceCards = [
   {
     number: '01',
-    icon: 'architecture',
-    title: 'Écosystème de Marque Signature',
-    text: 'Nous relions image, expérience et positionnement pour donner à votre activité une structure plus lisible et plus désirable.',
+    icon: 'show_chart',
+    title: 'Conseil en Marché Financier',
+    text: 'Nous guidons vos décisions de placement : actions, obligations, fonds d\'investissement. Nos experts analysent les marchés pour maximiser vos rendements tout en maîtrisant les risques.',
   },
   {
     number: '02',
-    icon: 'analytics',
-    title: 'Analyse Prédictive de la Demande',
-    text: 'Nous lisons les tendances, les flux et les signaux faibles pour orienter vos arbitrages avec précision.',
+    icon: 'apartment',
+    title: 'Investissement Immobilier',
+    text: 'Vous souhaitez placer votre argent dans la pierre ? Nous identifions les opportunités, évaluons la rentabilité et vous accompagnons dans chaque étape de votre investissement immobilier.',
+  },
+  {
+    number: '03',
+    icon: 'trending_up',
+    title: 'Développement d\'Entreprise',
+    text: 'Croissance du chiffre d\'affaires, structuration de l\'organisation, optimisation des coûts : nous analysons votre entreprise et construisons avec vous une feuille de route vers la performance.',
+  },
+  {
+    number: '04',
+    icon: 'restaurant',
+    title: 'Conseil Hôtellerie & Restauration',
+    text: 'Rentabilité, gestion des équipes, expérience client, tarification : nos consultants connaissent les spécificités de votre secteur et interviennent directement sur le terrain pour améliorer vos résultats.',
   },
 ]
 
@@ -63,6 +75,7 @@ const ServicesPage = () => {
 
   return (
     <main>
+      {/* Hero */}
       <section className="relative min-h-[80vh] w-full flex items-center justify-center overflow-hidden pt-24 md:pt-20">
         <motion.div 
           initial={{ scale: 1.1, opacity: 0 }}
@@ -72,7 +85,7 @@ const ServicesPage = () => {
         >
           <img
             className="w-full h-full object-cover brightness-50"
-            alt="A cinematic low-angle shot of a modern glass skyscraper reflecting a deep obsidian night sky."
+            alt="Cabinet de conseil stratégique Étude Viale"
             src="/assets/images/hero.png"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/40 to-surface" />
@@ -85,13 +98,13 @@ const ServicesPage = () => {
             className="text-center max-w-5xl mx-auto"
           >
             <motion.span variants={itemVariants} className="font-label-caps text-[10px] md:text-label-caps text-tertiary tracking-[0.4em] block mb-6 md:mb-8 opacity-80 uppercase">
-              LE PRESTIGE DU CONSEIL
+              Nos Expertises
             </motion.span>
-            <motion.h1 variants={itemVariants} className="font-serif text-[40px] sm:text-[60px] md:text-display-xl text-on-surface leading-tight mb-8 md:mb-10 italic">
-              L'Architecture de la Réussite
+            <motion.h1 variants={itemVariants} className="font-serif text-[32px] md:text-display-lg text-on-surface leading-tight mb-8 md:mb-10 italic">
+              Des Conseils Concrets,<br className="hidden md:block" /> Des Résultats Réels
             </motion.h1>
             <motion.p variants={itemVariants} className="font-body-lg text-lg md:text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-              Une précision chirurgicale dans la stratégie, une exécution sans faille pour les acteurs qui façonnent la performance durable.
+              Que vous souhaitiez faire fructifier votre capital, investir dans l'immobilier ou améliorer la performance de votre entreprise, nos équipes sont là pour vous guider avec précision.
             </motion.p>
             <motion.div 
               initial={{ height: 0, opacity: 0 }}
@@ -103,6 +116,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* Conseil Financier & Placement */}
       <section className="bg-surface py-20 md:py-section-gap">
         <div className="max-w-container-max mx-auto px-6 md:px-margin-edge grid grid-cols-1 md:grid-cols-2 items-center gap-12 md:gap-gutter">
           <motion.div 
@@ -113,36 +127,38 @@ const ServicesPage = () => {
             className="order-2 md:order-1"
           >
             <div className="max-w-xl mx-auto md:mx-0">
-            <span className="font-label-caps text-[10px] md:text-label-caps text-tertiary mb-6 block uppercase">
-              HOSPITALITY & RETAIL
-            </span>
-            <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-8 leading-tight">
-              Ingénierie de la Croissance
-            </h2>
-            <div className="h-px w-full bg-outline-variant/30 mb-8" />
-            <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-12 leading-relaxed">
-              Nous transformons les destinations en héritages. Notre approche combine l’analyse, la structure et une compréhension intime de l’expérience client haut de gamme.
-            </p>
-            <ul className="space-y-6">
-              {[
-                { icon: 'architecture', label: 'Écosystème de Marque Signature' },
-                { icon: 'analytics', label: 'Analyse Prédictive de la Demande' }
-              ].map((item, i) => (
-                <motion.li 
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3 + (i * 0.1) }}
-                  className="flex items-center gap-4 text-on-surface"
-                >
-                  <span className="material-symbols-outlined text-tertiary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
-                    {item.icon}
-                  </span>
-                  <span className="font-body-md text-sm md:text-base">{item.label}</span>
-                </motion.li>
-              ))}
-            </ul>
+              <span className="font-label-caps text-[10px] md:text-label-caps text-tertiary mb-6 block uppercase">
+                FINANCE & PLACEMENTS
+              </span>
+              <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-8 leading-tight">
+                Faites Travailler Votre Argent
+              </h2>
+              <div className="h-px w-full bg-outline-variant/30 mb-8" />
+              <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-12 leading-relaxed">
+                Vous avez des liquidités à placer mais vous ne savez pas où ni comment ? Nos conseillers financiers analysent votre profil, vos objectifs et votre horizon de placement pour vous orienter vers les solutions les plus adaptées : marchés financiers, produits structurés, fonds ou diversification de portefeuille.
+              </p>
+              <ul className="space-y-6">
+                {[
+                  { icon: 'show_chart', label: 'Marchés financiers & bourse' },
+                  { icon: 'savings', label: 'Optimisation de portefeuille' },
+                  { icon: 'apartment', label: 'Investissement immobilier' },
+                  { icon: 'account_balance', label: 'Gestion de patrimoine' },
+                ].map((item, i) => (
+                  <motion.li 
+                    key={i}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 + (i * 0.1) }}
+                    className="flex items-center gap-4 text-on-surface"
+                  >
+                    <span className="material-symbols-outlined text-tertiary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
+                      {item.icon}
+                    </span>
+                    <span className="font-body-md text-sm md:text-base">{item.label}</span>
+                  </motion.li>
+                ))}
+              </ul>
             </div>
           </motion.div>
           <motion.div 
@@ -154,7 +170,7 @@ const ServicesPage = () => {
           >
             <img
               className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110"
-              alt="A high-fashion editorial photograph showing a luxury retail interior"
+              alt="Conseil en investissement financier"
               src="/assets/images/res.png"
             />
             <div className="absolute inset-0 bg-surface/10 mix-blend-multiply" />
@@ -162,6 +178,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* Développement d'Entreprise */}
       <section className="relative min-h-[70vh] md:min-h-[calc(100vh-5rem)] flex items-center justify-center py-20 md:py-section-gap overflow-hidden">
         <motion.div 
           initial={{ y: "10%" }}
@@ -171,7 +188,7 @@ const ServicesPage = () => {
         >
           <img
             className="w-full h-full object-cover brightness-[0.3]"
-            alt="An abstract, low-exposure shot of a modern financial district at night."
+            alt="Développement stratégique d'entreprise"
             src="/assets/images/inte.png"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-surface/10 via-surface/50 to-surface" />
@@ -185,25 +202,26 @@ const ServicesPage = () => {
             className="glass-panel p-8 md:p-24 max-w-4xl border-l-4 border-tertiary shadow-2xl"
           >
             <span className="font-label-caps text-[10px] md:text-label-caps text-tertiary mb-6 block uppercase">
-              STRATÉGIE DE HAUTE VOLÉE
+              CROISSANCE & PERFORMANCE
             </span>
             <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-8 md:mb-10 leading-tight">
-              Capital &amp; Stratégie Financière
+              Développez Votre Entreprise avec Méthode
             </h2>
             <p className="font-body-lg text-lg md:text-body-lg text-on-surface-variant mb-10 md:mb-12 leading-relaxed">
-              Sécuriser l’avenir demande une vision structurelle. Nous aidons à orienter les décisions de capital avec une logique longue durée, lisible et robuste.
+              Votre entreprise stagne ? Vos marges s'érodent ? Vous voulez passer à l'échelle mais ne savez pas par où commencer ? Nos consultants identifient les blocages, optimisent vos processus et construisent avec vous une stratégie de croissance durable — que vous soyez dans le commerce, l'hôtellerie, la restauration ou tout autre secteur.
             </p>
             <InternalLink
               to={ROUTES.contact}
               className="inline-flex border border-tertiary text-tertiary px-8 md:px-10 py-4 font-label-caps text-xs md:text-label-caps hover:bg-tertiary hover:text-on-tertiary transition-all duration-500 group"
             >
-              Demander une consultation
+              Demander un diagnostic gratuit
               <span className="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">north_east</span>
             </InternalLink>
           </motion.div>
         </div>
       </section>
 
+      {/* Nos 4 Domaines d'Expertise */}
       <section className="bg-surface blueprint-grid py-20 md:py-section-gap">
         <div className="max-w-container-max mx-auto px-6 md:px-margin-edge">
           <div className="flex flex-col md:flex-row justify-between md:items-end mb-16 md:mb-24 gap-8 md:gap-12">
@@ -214,10 +232,10 @@ const ServicesPage = () => {
               className="max-w-2xl"
             >
               <span className="font-label-caps text-label-caps text-tertiary mb-6 block uppercase tracking-widest">
-                SYSTÈMES & PERFORMANCE
+                NOS DOMAINES D'INTERVENTION
               </span>
               <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface leading-tight">
-                Optimisation Opérationnelle
+                Quatre Expertises, Un Seul Objectif
               </h2>
             </motion.div>
             <motion.div 
@@ -228,7 +246,7 @@ const ServicesPage = () => {
               className="md:text-right max-w-xl"
             >
               <p className="font-body-md text-sm md:text-base text-on-surface-variant italic">
-                "La perfection est atteinte, non pas lorsqu'il n'y a plus rien à ajouter, mais lorsqu'il n'y a plus rien à retirer."
+                "Nous ciblons vos problèmes et les résolvons — avec les bons outils, les bonnes personnes, au bon moment."
               </p>
             </motion.div>
           </div>
@@ -240,7 +258,7 @@ const ServicesPage = () => {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.2 }}
+                transition={{ duration: 0.6, delay: idx * 0.15 }}
                 className="glass-panel p-8 md:p-12 group hover:border-tertiary/60 transition-all duration-500 cursor-default"
               >
                 <div className="flex justify-between items-start mb-8 md:mb-12">
@@ -261,7 +279,7 @@ const ServicesPage = () => {
                   <motion.div 
                     initial={{ width: "0%" }}
                     whileInView={{ width: "33%" }}
-                    transition={{ delay: 0.5 + (idx * 0.2), duration: 1 }}
+                    transition={{ delay: 0.5 + (idx * 0.15), duration: 1 }}
                     className="h-1 bg-tertiary" 
                   />
                   <div className="h-1 flex-1 bg-outline-variant/30" />
@@ -273,6 +291,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* Notre Méthodologie */}
       <section className="bg-surface-container-lowest py-20 md:py-section-gap relative overflow-hidden">
         <div className="max-w-container-max mx-auto px-6 md:px-margin-edge">
           <motion.div 
@@ -282,7 +301,7 @@ const ServicesPage = () => {
             className="text-center mb-20 md:mb-32"
           >
             <span className="font-label-caps text-label-caps text-tertiary mb-6 block">NOTRE PROTOCOLE</span>
-            <h2 className="font-display-lg text-[32px] md:text-headline-md text-on-surface">La Méthodologie Viale</h2>
+            <h2 className="font-display-lg text-[32px] md:text-headline-md text-on-surface">Comment Nous Travaillons</h2>
           </motion.div>
           <div className="relative">
             <motion.div 
@@ -317,6 +336,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* CTA Final */}
       <section className="bg-surface py-20 md:py-section-gap relative overflow-hidden">
         <motion.div 
           initial={{ x: "100%", opacity: 0 }}
@@ -331,16 +351,16 @@ const ServicesPage = () => {
             viewport={{ once: true }}
             className="flex flex-col items-center text-center"
           >
-            <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-8 md:mb-12 leading-tight">Entrez dans le cercle</h2>
+            <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-8 md:mb-12 leading-tight">Parlons de Votre Projet</h2>
             <p className="font-body-lg text-lg md:text-body-lg text-on-surface-variant max-w-2xl mb-12 md:mb-16 leading-relaxed">
-              Nous sélectionnons nos partenaires avec la même exigence qu'ils appliquent à leurs métiers. Rejoignez un accompagnement pensé pour durer.
+              Que ce soit pour un placement financier, un projet immobilier ou le développement de votre activité, nos consultants sont disponibles pour un premier échange sans engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
               <InternalLink
                 to={ROUTES.contact}
                 className="bg-tertiary text-on-tertiary px-10 md:px-16 py-5 md:py-6 font-label-caps text-xs md:text-label-caps hover:bg-tertiary-fixed-dim transition-all duration-500 shadow-2xl shadow-tertiary/20 uppercase tracking-[0.3em] relative overflow-hidden group text-center"
               >
-                <span className="relative z-10">Demander un Accès Privé</span>
+                <span className="relative z-10">Prendre Rendez-vous</span>
                 <motion.div 
                   className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500" 
                 />
@@ -349,7 +369,7 @@ const ServicesPage = () => {
                 to={ROUTES.contact}
                 className="border border-tertiary/30 text-tertiary px-10 md:px-10 py-5 md:py-6 font-label-caps text-xs md:text-label-caps hover:bg-tertiary/5 transition-all duration-500 uppercase tracking-widest text-center"
               >
-                Découvrir le contact
+                Nous Contacter
               </InternalLink>
             </div>
           </motion.div>

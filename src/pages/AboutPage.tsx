@@ -4,19 +4,19 @@ import { ROUTES } from '../lib/routes'
 
 const values = [
   {
-    title: 'Excellence Architecturale',
-    text: 'Nous concevons des solutions sur mesure où chaque détail est pensé pour renforcer la structure globale de votre patrimoine.',
-    icon: 'architecture'
+    title: 'Expertise Terrain',
+    text: "Nos équipes s'immergent dans votre environnement opérationnel — restaurant, hôtel, commerce ou entreprise — pour comprendre vos réalités avant de proposer des solutions.",
+    icon: 'search_insights'
   },
   {
-    title: 'Discrétion Absolue',
-    text: 'Le secret est le fondement de notre relation avec nos clients d’exception. Une confidentialité sans compromis.',
-    icon: 'verified_user'
+    title: 'Rigueur Analytique',
+    text: "Chaque recommandation repose sur une analyse précise de vos données, de votre marché et de vos objectifs. Nous ne conseillons pas à l'aveugle.",
+    icon: 'analytics'
   },
   {
-    title: 'Vision Long Terme',
-    text: 'Nous ne cherchons pas le gain éphémère, mais la pérennité et la transmission des actifs à travers les générations.',
-    icon: 'timeline'
+    title: 'Accompagnement Sur-Mesure',
+    text: "Pas de solution générique. Nous construisons une stratégie adaptée à votre secteur, votre taille et vos ambitions — à court comme à long terme.",
+    icon: 'handshake'
   }
 ]
 
@@ -53,7 +53,7 @@ const AboutPage = () => {
         >
           <img
             className="w-full h-full object-cover grayscale"
-            alt="Minimalist luxury architectural detail"
+            alt="Cabinet de conseil stratégique"
             src="/assets/images/inte.png"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent" />
@@ -69,25 +69,25 @@ const AboutPage = () => {
               variants={itemVariants}
               className="font-label-caps text-[10px] md:text-label-caps text-tertiary block mb-6 uppercase tracking-[0.4em]"
             >
-              L'Héritage Viale
+              Qui Sommes-Nous
             </motion.span>
             <motion.h1 
               variants={itemVariants}
-              className="font-serif text-[40px] sm:text-[60px] md:text-display-xl mb-8 leading-tight italic"
+              className="font-serif text-[32px] md:text-display-lg mb-8 leading-tight italic"
             >
-              L'Art du Conseil <br className="hidden md:block" /> de Haute Précision
+              Un Cabinet de Conseil <br className="hidden md:block" /> au Service de votre Croissance
             </motion.h1>
             <motion.p 
               variants={itemVariants}
               className="font-body-lg text-lg md:text-body-lg text-on-surface-variant max-w-2xl leading-relaxed"
             >
-              Fondée sur des principes de rigueur et d'élégance stratégique, l'Étude Viale accompagne les décideurs dans la structuration de leur réussite.
+              Étude Viale est un cabinet de conseil stratégique basé à Antananarivo. Nos équipes accompagnent les entreprises, les investisseurs et les porteurs de projets dans l'optimisation de leur performance et la structuration de leur patrimoine.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Philosophy Section */}
+      {/* Notre Mission */}
       <section className="py-20 md:py-section-gap relative">
         <div className="max-w-container-max mx-auto px-6 md:px-margin-edge grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <motion.div
@@ -96,20 +96,20 @@ const AboutPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="font-label-caps text-label-caps text-tertiary mb-6 block">NOTRE GENÈSE</span>
-            <h2 className="font-display-lg text-[32px] md:text-headline-lg mb-8 leading-tight">Une Signature Internationale</h2>
+            <span className="font-label-caps text-label-caps text-tertiary mb-6 block">NOTRE MISSION</span>
+            <h2 className="font-display-lg text-[32px] md:text-headline-lg mb-8 leading-tight">Identifier les Problèmes. Construire les Solutions.</h2>
             <div className="space-y-6 font-body-md text-sm md:text-on-surface-variant leading-relaxed">
               <p>
-                L'Étude Viale est née d'une volonté simple : apporter une clarté absolue dans un monde financier et immobilier complexe. Notre cabinet s'est imposé comme une référence pour ceux qui exigent plus qu'un simple conseil : une véritable architecture de croissance.
+                Étude Viale est née d'un constat simple : les entreprises, quelle que soit leur taille, ont besoin d'un regard extérieur expert pour détecter leurs freins et libérer leur potentiel. Notre cabinet met à disposition des équipes pluridisciplinaires capables d'intervenir dans des environnements variés — commerce, hôtellerie, restauration ou industrie.
               </p>
               <p>
-                Présents à Paris, Londres et Genève, nous intervenons aux carrefours des opportunités mondiales pour sécuriser et magnifier les actifs de nos partenaires.
+                Nous ne nous contentons pas de diagnostiquer. Nous co-construisons des plans d'action concrets, mesurables et adaptés à votre réalité terrain. Notre engagement : des résultats tangibles, pas des rapports oubliés dans un tiroir.
               </p>
             </div>
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-outline-variant/20 pt-12">
               {[
-                { val: "15+", label: "Années d'Excellence" },
-                { val: "1.2B", label: "Actifs Conseillés" }
+                { val: "100+", label: "Entreprises Accompagnées" },
+                { val: "3", label: "Pôles d'Expertise" }
               ].map((stat, i) => (
                 <motion.div 
                   key={i}
@@ -134,7 +134,7 @@ const AboutPage = () => {
             >
               <img 
                 src="/assets/images/res.png" 
-                alt="Architecture and strategy" 
+                alt="Conseil stratégique en action" 
                 className="w-full h-full object-cover grayscale hover:scale-110 transition-transform duration-[3000ms]"
               />
             </motion.div>
@@ -146,14 +146,14 @@ const AboutPage = () => {
               className="absolute -bottom-8 -left-8 md:-bottom-12 md:-left-12 glass-panel p-6 md:p-8 max-w-xs hidden sm:block"
             >
               <p className="font-body-sm text-xs md:text-sm italic text-on-surface leading-snug">
-                "La stratégie est une symphonie où chaque note doit être parfaitement accordée."
+                "Notre rôle est de comprendre votre métier aussi bien que vous, pour vous conseiller mieux que quiconque."
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Nos Valeurs */}
       <section className="bg-surface-container-lowest blueprint-grid py-20 md:py-section-gap">
         <div className="max-w-container-max mx-auto px-6 md:px-margin-edge">
           <div className="text-center mb-16 md:mb-24">
@@ -201,7 +201,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Notre Équipe */}
       <section className="py-20 md:py-section-gap overflow-hidden">
         <div className="max-w-container-max mx-auto px-6 md:px-margin-edge">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
@@ -215,7 +215,7 @@ const AboutPage = () => {
               <div className="relative group overflow-hidden max-w-lg mx-auto lg:max-w-none">
                 <img 
                   src="/assets/images/com.png" 
-                  alt="Founder Portrait" 
+                  alt="L'équipe Étude Viale" 
                   className="w-full aspect-square object-cover grayscale brightness-75 transition-transform duration-1000 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 border-[10px] md:border-[20px] border-surface/20" />
@@ -228,22 +228,22 @@ const AboutPage = () => {
               transition={{ duration: 1.2, ease: "easeOut" }}
               className="w-full lg:w-1/2"
             >
-              <span className="font-label-caps text-label-caps text-tertiary mb-6 block uppercase tracking-[0.2em]">Direction</span>
-              <h2 className="font-serif text-[48px] md:text-display-lg italic mb-6 md:mb-8 leading-none">Romain Viale</h2>
-              <p className="font-label-caps text-[10px] md:text-sm text-on-surface-variant mb-8 md:mb-10 tracking-widest uppercase">Fondateur & Directeur de la Stratégie</p>
+              <span className="font-label-caps text-label-caps text-tertiary mb-6 block uppercase tracking-[0.2em]">Notre Équipe</span>
+              <h2 className="font-serif text-[36px] md:text-display-lg italic mb-6 md:mb-8 leading-tight">Des Experts à Votre Service</h2>
+              <p className="font-label-caps text-[10px] md:text-sm text-on-surface-variant mb-8 md:mb-10 tracking-widest uppercase">Conseil · Finance · Développement d'Entreprise</p>
               <div className="space-y-6 font-body-md text-sm md:text-on-surface-variant leading-relaxed mb-10 md:mb-12">
                 <p>
-                  Expert reconnu en ingénierie financière et développement hôtelier, Romain Viale a bâti l'Étude sur une conviction : le conseil doit être un acte de création.
+                  Notre cabinet réunit des consultants spécialisés en stratégie financière, en développement commercial et en optimisation opérationnelle. Chaque mission est conduite par une équipe dédiée, sélectionnée selon les spécificités de votre secteur.
                 </p>
                 <p>
-                  Son approche mêle rigueur analytique et intuition du marché pour transformer les actifs de ses clients en véritables leviers de puissance.
+                  Que vous soyez un restaurateur cherchant à améliorer sa rentabilité, un investisseur souhaitant optimiser ses placements ou un entrepreneur voulant structurer sa croissance, nos experts s'adaptent à votre réalité et vous accompagnent à chaque étape.
                 </p>
               </div>
               <InternalLink 
                 to={ROUTES.contact} 
                 className="inline-flex items-center gap-4 text-tertiary font-label-caps text-label-caps uppercase tracking-widest group border-b border-transparent hover:border-tertiary transition-all"
               >
-                Demander un entretien privé
+                Prendre contact avec nos équipes
                 <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
               </InternalLink>
             </motion.div>
@@ -251,19 +251,19 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Global Presence Banner */}
+      {/* Présence */}
       <section className="bg-background py-24 border-y border-outline-variant/10 overflow-hidden relative">
         <div className="max-w-container-max mx-auto px-margin-edge">
           <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.6 }}
             viewport={{ once: true }}
-            className="flex flex-wrap justify-between items-center gap-12"
+            className="flex flex-wrap justify-center items-center gap-12"
           >
-            {['Paris', 'London', 'Geneva', 'Luxembourg'].map((city, i) => (
-              <div key={city} className="flex items-center gap-12">
-                <span className="font-serif text-headline-md italic">{city}</span>
-                {i < 3 && <div className="w-2 h-2 rounded-full bg-tertiary" />}
+            {['Hôtellerie', 'Restauration', 'Commerce', 'Finance & Investissement'].map((sector, i, arr) => (
+              <div key={sector} className="flex items-center gap-12">
+                <span className="font-serif text-headline-md italic">{sector}</span>
+                {i < arr.length - 1 && <div className="w-2 h-2 rounded-full bg-tertiary" />}
               </div>
             ))}
           </motion.div>
@@ -279,7 +279,7 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="font-display-lg text-[32px] sm:text-[48px] md:text-display-lg mb-12 leading-tight"
           >
-            Prêt à Structurer <br/> votre Réussite ?
+            Prêt à Passer à <br/> l'Étape Supérieure ?
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -291,7 +291,7 @@ const AboutPage = () => {
               to={ROUTES.contact}
               className="bg-tertiary text-on-tertiary px-10 md:px-16 py-5 md:py-6 font-label-caps text-xs md:text-label-caps hover:bg-tertiary-fixed-dim transition-all duration-500 shadow-2xl shadow-tertiary/10 uppercase tracking-widest inline-block group"
             >
-              <span className="group-hover:tracking-[0.2em] transition-all duration-500">Commencer la Consultation</span>
+              <span className="group-hover:tracking-[0.2em] transition-all duration-500">Demander une Consultation</span>
             </InternalLink>
           </motion.div>
         </div>
