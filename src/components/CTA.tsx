@@ -4,7 +4,7 @@ import { ROUTES } from '../lib/routes'
 
 const CTA = () => {
   return (
-    <section className="relative py-section-gap overflow-hidden">
+    <section className="relative py-24 md:py-section-gap overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-tertiary opacity-5"></div>
         <motion.div
@@ -17,15 +17,15 @@ const CTA = () => {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-tertiary/10 rounded-full blur-[120px]"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-tertiary/10 rounded-full blur-[80px] md:blur-[120px]"
         />
       </div>
-      <div className="relative z-10 max-w-container-max mx-auto px-margin-edge text-center">
+      <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-margin-edge text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-display-xl text-display-lg text-on-surface mb-12 tracking-tighter"
+          className="font-display-xl text-[36px] md:text-display-lg text-on-surface mb-12 tracking-tighter leading-tight"
         >
           Définissez la prochaine époque
         </motion.h2>

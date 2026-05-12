@@ -43,7 +43,7 @@ const ContactPage = () => {
 
   return (
     <main className="bg-surface text-on-surface">
-      <section className="relative min-h-[716px] flex flex-col justify-center pt-20 border-b border-outline-variant/10 overflow-hidden">
+      <section className="relative min-h-[500px] md:min-h-[716px] flex flex-col justify-center pt-24 md:pt-20 border-b border-outline-variant/10 overflow-hidden">
         <motion.div 
           initial={{ scale: 1.1, opacity: 0 }}
           animate={{ scale: 1, opacity: 0.3 }}
@@ -57,27 +57,27 @@ const ContactPage = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent" />
         </motion.div>
-        <div className="relative z-10 max-w-container-max mx-auto px-margin-edge w-full">
+        <div className="relative z-10 max-w-container-max mx-auto px-6 md:px-margin-edge w-full">
           <motion.div 
             initial="hidden"
             animate="visible"
             variants={containerVariants}
             className="max-w-4xl text-center mx-auto"
           >
-            <motion.span variants={itemVariants} className="font-label-caps text-label-caps text-tertiary block mb-6 uppercase tracking-[0.4em]">
+            <motion.span variants={itemVariants} className="font-label-caps text-[10px] md:text-label-caps text-tertiary block mb-6 uppercase tracking-[0.4em]">
               Protocole d'Accès
             </motion.span>
-            <motion.h1 variants={itemVariants} className="font-display-lg text-display-lg mb-8 leading-none">
+            <motion.h1 variants={itemVariants} className="font-display-lg text-[32px] md:text-display-lg mb-8 leading-tight">
               Entrez dans la Confidentialité
             </motion.h1>
-            <motion.p variants={itemVariants} className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            <motion.p variants={itemVariants} className="font-body-lg text-lg md:text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
               Nous orchestrons des solutions stratégiques pour les leaders d'exception. Chaque échange est traité avec la plus haute rigueur diplomatique et architecturale.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      <section className="max-w-container-max mx-auto px-margin-edge py-section-gap grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+      <section className="max-w-container-max mx-auto px-6 md:px-margin-edge py-20 md:py-section-gap grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter">
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -85,9 +85,9 @@ const ContactPage = () => {
           transition={{ duration: 0.8 }}
           className="lg:col-span-7"
         >
-          <div className="glass-panel p-12 shadow-2xl">
-            <h2 className="font-display-lg text-headline-md mb-12">Demande de Consultation</h2>
-            <form className="space-y-12">
+          <div className="glass-panel p-8 md:p-12 shadow-2xl">
+            <h2 className="font-display-lg text-[28px] md:text-headline-md mb-10 md:mb-12 leading-tight">Demande de Consultation</h2>
+            <form className="space-y-8 md:space-y-12">
               {[
                 { label: 'Nom complet', placeholder: 'Veuillez décliner votre identité', type: 'text' },
                 { label: 'Organisation', placeholder: 'Entité représentée', type: 'text' }
@@ -100,11 +100,11 @@ const ContactPage = () => {
                   transition={{ delay: 0.2 + (i * 0.1) }}
                   className="relative"
                 >
-                  <label className="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4 block">
+                  <label className="font-label-caps text-[10px] md:text-label-caps text-on-surface-variant uppercase mb-4 block">
                     {field.label}
                   </label>
                   <input
-                    className="w-full bg-transparent input-underline py-4 font-body-lg text-body-lg text-on-surface placeholder:text-outline-variant/30 focus:ring-0"
+                    className="w-full bg-transparent input-underline py-4 font-body-lg text-lg md:text-body-lg text-on-surface placeholder:text-outline-variant/30 focus:ring-0"
                     placeholder={field.placeholder}
                     type={field.type}
                   />
@@ -117,11 +117,11 @@ const ContactPage = () => {
                 transition={{ delay: 0.4 }}
                 className="relative"
               >
-                <label className="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4 block">
+                <label className="font-label-caps text-[10px] md:text-label-caps text-on-surface-variant uppercase mb-4 block">
                   Nature du Projet
                 </label>
                 <textarea
-                  className="w-full bg-transparent input-underline py-4 font-body-lg text-body-lg text-on-surface placeholder:text-outline-variant/30 focus:ring-0 resize-none"
+                  className="w-full bg-transparent input-underline py-4 font-body-lg text-lg md:text-body-lg text-on-surface placeholder:text-outline-variant/30 focus:ring-0 resize-none"
                   placeholder="Brève description de vos impératifs stratégiques"
                   rows={4}
                 />
@@ -135,7 +135,7 @@ const ContactPage = () => {
               >
                 <InternalLink
                   to={ROUTES.contact}
-                  className="group flex items-center gap-4 text-tertiary font-label-caps text-label-caps uppercase tracking-widest hover:text-tertiary-fixed transition-colors"
+                  className="group flex items-center gap-4 text-tertiary font-label-caps text-xs md:text-label-caps uppercase tracking-widest hover:text-tertiary-fixed transition-colors"
                 >
                   Soumettre la requête
                   <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform duration-300">
@@ -147,7 +147,7 @@ const ContactPage = () => {
           </div>
         </motion.div>
 
-        <div className="lg:col-span-5 flex flex-col gap-gutter">
+        <div className="lg:col-span-5 flex flex-col gap-8 md:gap-gutter">
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -155,7 +155,7 @@ const ContactPage = () => {
             transition={{ duration: 0.8 }}
             className="glass-panel p-8"
           >
-            <h3 className="font-label-caps text-label-caps text-tertiary mb-8 uppercase tracking-[0.2em]">
+            <h3 className="font-label-caps text-sm md:text-label-caps text-tertiary mb-8 uppercase tracking-[0.2em]">
               Canaux Sécurisés
             </h3>
             <div className="space-y-6">
@@ -166,7 +166,7 @@ const ContactPage = () => {
                 <div key={i} className="flex items-center gap-6 group cursor-pointer">
                   <motion.div 
                     whileHover={{ scale: 1.1, backgroundColor: "#d8c4a2", color: "#0b1324" }}
-                    className="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-tertiary transition-all duration-300"
+                    className="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-tertiary transition-all duration-300 flex-shrink-0"
                   >
                     <span className="material-symbols-outlined">{item.icon}</span>
                   </motion.div>
@@ -174,7 +174,7 @@ const ContactPage = () => {
                     <p className="font-label-caps text-[10px] text-on-surface-variant uppercase mb-1">
                       {item.label}
                     </p>
-                    <p className="font-body-md text-body-md group-hover:text-tertiary transition-colors">{item.val}</p>
+                    <p className="font-body-md text-sm md:text-body-md group-hover:text-tertiary transition-colors">{item.val}</p>
                   </div>
                 </div>
               ))}
@@ -188,10 +188,10 @@ const ContactPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="glass-panel p-8 flex-grow"
           >
-            <h3 className="font-label-caps text-label-caps text-tertiary mb-8 uppercase tracking-[0.2em]">
+            <h3 className="font-label-caps text-sm md:text-label-caps text-tertiary mb-8 uppercase tracking-[0.2em]">
               Présence Mondiale
             </h3>
-            <div className="space-y-10">
+            <div className="space-y-8 md:space-y-10">
               {officeBlocks.map((office, index) => (
                 <motion.div
                   key={office.city}
@@ -201,8 +201,8 @@ const ContactPage = () => {
                   transition={{ delay: 0.3 + (index * 0.1) }}
                   className="border-l border-tertiary/30 pl-6 group cursor-default"
                 >
-                  <h4 className="font-headline-sm text-[24px] mb-2 group-hover:text-tertiary transition-colors">{office.city}</h4>
-                  <p className="font-body-md text-on-surface-variant mb-2">{office.address}</p>
+                  <h4 className="font-headline-sm text-xl md:text-[24px] mb-2 group-hover:text-tertiary transition-colors">{office.city}</h4>
+                  <p className="font-body-md text-sm md:text-base text-on-surface-variant mb-2">{office.address}</p>
                   <p className="font-label-caps text-[10px] text-outline tracking-widest opacity-50">{office.coords}</p>
                 </motion.div>
               ))}
@@ -212,13 +212,13 @@ const ContactPage = () => {
       </section>
 
       <section className="py-16 overflow-hidden">
-        <div className="max-w-container-max mx-auto px-margin-edge">
+        <div className="max-w-container-max mx-auto px-6 md:px-margin-edge">
           <motion.div 
             initial={{ opacity: 0, scale: 1.05 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
-            className="w-full h-[500px] relative overflow-hidden group"
+            className="w-full h-[350px] md:h-[500px] relative overflow-hidden group"
           >
             <img
               className="w-full h-full object-cover grayscale brightness-50 transition-transform duration-[3000ms] group-hover:scale-110"
@@ -233,7 +233,7 @@ const ContactPage = () => {
                 transition={{ delay: 0.5, duration: 1 }}
                 className="max-w-2xl text-center px-8"
               >
-                <p className="font-display-lg text-headline-lg md:text-display-lg leading-tight italic opacity-90 text-on-surface">
+                <p className="font-display-lg text-[24px] md:text-display-lg leading-tight italic opacity-90 text-on-surface">
                   "La discrétion est l'ultime forme du prestige."
                 </p>
                 <div className="mt-8 h-px w-24 bg-tertiary mx-auto opacity-50" />

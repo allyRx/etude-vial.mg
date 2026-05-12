@@ -17,6 +17,11 @@
     font-family: 'Hanken Grotesk', sans-serif;
     @apply selection:bg-tertiary selection:text-background;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
   }
 }
 

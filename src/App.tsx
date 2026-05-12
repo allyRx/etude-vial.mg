@@ -27,7 +27,7 @@ function App() {
   const page = pages[pathname] || <NotFoundPage />
 
   return (
-    <div className="bg-background text-on-surface min-h-screen">
+    <div className="bg-background text-on-surface min-h-screen overflow-x-hidden">
       <Navbar />
       {page}
       <Footer />
