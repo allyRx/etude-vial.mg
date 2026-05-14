@@ -347,7 +347,7 @@ const ContactPage = () => {
                 transition={{ delay: 0.5, duration: 1 }}
                 className="max-w-2xl text-center px-8"
               >
-                <p className="font-display-lg text-[24px] md:text-display-lg leading-tight italic opacity-90 text-on-surface">
+                <p className="font-body-lg text-lg md:text-headline-sm leading-relaxed italic opacity-90 text-on-surface">
                   "Nous ne donnons pas des conseils génériques. Nous comprenons votre réalité, et nous vous aidons à la transformer."
                 </p>
                 <div className="mt-8 h-px w-24 bg-tertiary mx-auto opacity-50" />
