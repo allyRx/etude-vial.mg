@@ -34,9 +34,9 @@ const StrategicServices = () => {
             viewport={{ once: true }}
             className="w-full md:w-2/3"
           >
-            <h2 className="font-display-lg text-[32px] md:text-headline-md text-on-surface mb-6 md:mb-8 leading-tight">Conseils sur les marchés financiers et investissements immobiliers.</h2>
-            <p className="font-body-lg text-lg md:text-body-lg text-on-surface-variant mb-0 md:mb-12">
-              Notre approche de l'investissement ne repose pas sur la spéculation, mais sur l'analyse structurelle des flux et la valorisation à long terme du patrimoine matériel et immatériel.
+            <h2 className="font-display-lg text-[32px] md:text-headline-md text-on-surface mb-6 md:mb-8 leading-tight">Expertises ciblées pour <br/> résultats concrets.</h2>
+            <p className="font-body-lg text-lg md:text-body-lg text-on-surface-variant">
+              Une approche rigoureuse pour valoriser votre patrimoine et dynamiser votre croissance.
             </p>
           </motion.div>
         </div>
@@ -49,20 +49,20 @@ const StrategicServices = () => {
         >
           <motion.div variants={item} className="glass-panel p-8 md:p-10 border border-outline-variant/20 hover:border-tertiary/40 transition-colors">
             <span className="material-symbols-outlined text-tertiary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>account_balance</span>
-            <h5 className="font-headline-sm text-2xl md:text-headline-sm text-on-surface mb-4">Conseil en Placement</h5>
-            <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-6">Optimisation de votre capital via des placements financiers rigoureux et des stratégies immobilières à haute valeur ajoutée.</p>
+            <h5 className="font-headline-sm text-2xl md:text-headline-sm text-on-surface mb-4">Placement & Immo</h5>
+            <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-6">Optimisation de capital et stratégies immobilières à haute valeur ajoutée.</p>
             <div className="h-[1px] w-full bg-outline-variant/30"></div>
           </motion.div>
           <motion.div variants={item} className="glass-panel p-8 md:p-10 border border-outline-variant/20 hover:border-tertiary/40 transition-colors">
             <span className="material-symbols-outlined text-tertiary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>trending_up</span>
-            <h5 className="font-headline-sm text-2xl md:text-headline-sm text-on-surface mb-4">Développement</h5>
-            <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-6">Accompagnement stratégique pour la croissance de votre entreprise, de la vision à l'exécution sur le terrain.</p>
+            <h5 className="font-headline-sm text-2xl md:text-headline-sm text-on-surface mb-4">Stratégie & Croissance</h5>
+            <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-6">Accompagnement expert pour le développement et l'exécution de votre vision.</p>
             <div className="h-[1px] w-full bg-outline-variant/30"></div>
           </motion.div>
           <motion.div variants={item} className="glass-panel p-8 md:p-10 border border-outline-variant/20 hover:border-tertiary/40 transition-colors">
             <span className="material-symbols-outlined text-tertiary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-            <h5 className="font-headline-sm text-2xl md:text-headline-sm text-on-surface mb-4">Résolution de Problèmes</h5>
-            <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-6">Identification précise des points de blocage opérationnels dans l'hôtellerie, la restauration et le commerce.</p>
+            <h5 className="font-headline-sm text-2xl md:text-headline-sm text-on-surface mb-4">Audit Opérationnel</h5>
+            <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-6">Résolution des blocages dans l'hôtellerie, la restauration et le commerce.</p>
             <div className="h-[1px] w-full bg-outline-variant/30"></div>
           </motion.div>
         </motion.div>

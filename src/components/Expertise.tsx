@@ -40,7 +40,7 @@ const Expertise = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
             <div className="absolute bottom-0 p-8 md:p-12 w-full">
               <h3 className="font-display-lg text-[28px] md:text-display-lg text-on-surface mb-4">Hôtellerie & Gastronomie</h3>
-              <p className="font-body-md text-sm md:text-body-md text-on-surface-variant max-w-md mb-8">Audit de performance et résolution de problématiques opérationnelles pour les établissements hôteliers et de restauration.</p>
+              <p className="font-body-md text-sm md:text-body-md text-on-surface-variant max-w-md mb-8">Audit de performance et résolution opérationnelle pour les établissements de prestige.</p>
               <span className="material-symbols-outlined text-tertiary">arrow_right_alt</span>
             </div>
           </motion.div>
@@ -56,7 +56,7 @@ const Expertise = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
             <div className="absolute bottom-0 p-8 md:p-12">
               <h3 className="font-headline-md text-2xl md:text-headline-md text-on-surface mb-4">Entreprises & Commerce</h3>
-              <p className="text-on-surface-variant text-xs md:text-sm mb-6">Accompagnement stratégique pour le développement des entreprises et l'optimisation des commerces de proximité.</p>
+              <p className="text-on-surface-variant text-xs md:text-sm mb-6">Accompagnement stratégique et optimisation des commerces de proximité.</p>
               <span className="material-symbols-outlined text-tertiary">arrow_right_alt</span>
             </div>
           </motion.div>
@@ -72,7 +72,7 @@ const Expertise = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
             <div className="absolute left-0 h-full flex flex-col justify-center p-8 md:p-12 max-w-xl">
               <h3 className="font-display-lg text-[28px] md:text-display-lg text-on-surface mb-2">Marchés Financiers & Immo</h3>
-              <p className="font-body-md text-sm md:text-body-md text-on-surface-variant">Conseils experts en placements financiers et stratégies d'investissement immobilier pour sécuriser et faire fructifier votre capital.</p>
+              <p className="font-body-md text-sm md:text-body-md text-on-surface-variant">Conseils experts en placements pour sécuriser et faire fructifier votre capital.</p>
             </div>
           </motion.div>
         </div>

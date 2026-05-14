@@ -15,10 +15,7 @@ const Intelligence = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <span className="font-label-caps text-tertiary mb-4 block uppercase text-[10px] md:text-label-caps">Intelligence Économique</span>
-              <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-6 md:mb-8 leading-tight">Expertise en Placement & Développement</h2>
-              <p className="font-body-lg text-lg md:text-body-lg text-on-surface-variant mb-10 md:mb-12">
-                Nous offrons des conseils sur-mesure pour vos placements sur les marchés financiers et immobiliers. Notre approche pragmatique aide les entrepreneurs à développer leur structure avec une vision claire.
-              </p>
+              <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-6 md:mb-8 leading-tight">Valorisation & <br/> Développement</h2>
               <div className="space-y-6 md:space-y-8">
                 <div className="flex items-start gap-4">
                   <span className="material-symbols-outlined text-tertiary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>account_balance</span>

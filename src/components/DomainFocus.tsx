@@ -26,8 +26,7 @@ const DomainFocus = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-0 left-0 p-8 md:p-12">
               <span className="font-label-caps text-[10px] md:text-label-caps text-tertiary uppercase mb-4 block">Hôtellerie Gastronomique</span>
-              <h4 className="font-display-lg text-[28px] md:text-headline-md text-on-surface mb-4">Restaurants</h4>
-              <p className="font-body-md text-sm md:text-body-md text-on-surface-variant max-w-sm">Optimisation opérationnelle et ingénierie de marque pour les fleurons de la haute cuisine.</p>
+              <h4 className="font-display-lg text-[28px] md:text-headline-md text-on-surface mb-0">Restaurants</h4>
             </div>
           </motion.div>
           {/* Hôtels */}
@@ -42,8 +41,7 @@ const DomainFocus = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-0 left-0 p-8 md:p-12">
               <span className="font-label-caps text-[10px] md:text-label-caps text-tertiary uppercase mb-4 block">Destination de Luxe</span>
-              <h4 className="font-display-lg text-[28px] md:text-headline-md text-on-surface mb-4">Hôtels</h4>
-              <p className="font-body-md text-sm md:text-body-md text-on-surface-variant">Structuration d'actifs et excellence de l'expérience client internationale.</p>
+              <h4 className="font-display-lg text-[28px] md:text-headline-md text-on-surface mb-0">Hôtels</h4>
             </div>
           </motion.div>
           {/* Commerces */}
@@ -59,8 +57,7 @@ const DomainFocus = () => {
             <div className="absolute bottom-0 left-0 p-8 md:p-12 flex flex-col md:flex-row md:items-end justify-between w-full">
               <div>
                 <span className="font-label-caps text-[10px] md:text-label-caps text-tertiary uppercase mb-4 block">Retail de Prestige</span>
-                <h4 className="font-display-lg text-[28px] md:text-headline-md text-on-surface mb-4">Commerces</h4>
-                <p className="font-body-md text-sm md:text-body-md text-on-surface-variant max-w-lg">Redéfinir le parcours marchand à l'ère du numérique et de l'exclusivité physique.</p>
+                <h4 className="font-display-lg text-[28px] md:text-headline-md text-on-surface mb-0">Commerces</h4>
               </div>
               <div className="mt-6 md:mt-0">
                 <span className="material-symbols-outlined text-tertiary text-[32px] md:text-[48px]">arrow_outward</span>

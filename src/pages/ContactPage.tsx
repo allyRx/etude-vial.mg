@@ -1,3 +1,4 @@
+import React from 'react'
 import { motion } from 'framer-motion'
 
 const officeBlocks = [
@@ -28,6 +29,40 @@ const ContactPage = () => {
       transition: { duration: 0.6, ease: "easeOut" }
     }
   }
+
+  const [status, setStatus] = React.useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [formData, setFormData] = React.useState({
+    name: '',
+    company: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+
+    try {
+      const data = new FormData();
+      Object.entries(formData).forEach(([key, value]) => {
+        data.append(key, value);
+      });
+
+      const response = await fetch('/send.php', {
+        method: 'POST',
+        body: data,
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', company: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
+  };
 
   return (
     <main className="bg-surface text-on-surface">
@@ -81,10 +116,10 @@ const ContactPage = () => {
             <p className="font-body-md text-sm text-on-surface-variant mb-10 leading-relaxed">
               Remplissez ce formulaire et un consultant vous contactera dans les 24h pour un premier échange sans engagement.
             </p>
-            <form className="space-y-8 md:space-y-12">
+            <form onSubmit={handleSubmit} className="space-y-8 md:space-y-12">
               {[
-                { label: 'Nom complet', placeholder: 'Votre nom et prénom', type: 'text' },
-                { label: 'Entreprise / Organisation', placeholder: 'Nom de votre structure (facultatif)', type: 'text' },
+                { label: 'Nom complet', placeholder: 'Votre nom et prénom', type: 'text', name: 'name' },
+                { label: 'Entreprise / Organisation', placeholder: 'Nom de votre structure (facultatif)', type: 'text', name: 'company' },
               ].map((field, i) => (
                 <motion.div 
                   key={field.label} 
@@ -98,6 +133,10 @@ const ContactPage = () => {
                     {field.label}
                   </label>
                   <input
+                    required={field.name === 'name'}
+                    name={field.name}
+                    value={(formData as any)[field.name]}
+                    onChange={(e) => setFormData({ ...formData, [field.name]: e.target.value })}
                     className="w-full bg-transparent input-underline py-4 font-body-lg text-lg md:text-body-lg text-on-surface placeholder:text-outline-variant/30 focus:ring-0"
                     placeholder={field.placeholder}
                     type={field.type}
@@ -116,7 +155,13 @@ const ContactPage = () => {
                 <label className="font-label-caps text-[10px] md:text-label-caps text-on-surface-variant uppercase mb-4 block">
                   Objet de votre demande
                 </label>
-                <select className="w-full bg-transparent input-underline py-4 font-body-lg text-lg md:text-body-lg text-on-surface focus:ring-0 appearance-none cursor-pointer">
+                <select 
+                  required
+                  name="subject"
+                  value={formData.subject}
+                  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                  className="w-full bg-transparent input-underline py-4 font-body-lg text-lg md:text-body-lg text-on-surface focus:ring-0 appearance-none cursor-pointer"
+                >
                   <option value="" className="bg-surface">Sélectionnez un domaine</option>
                   <option value="finance" className="bg-surface">Conseil en marché financier</option>
                   <option value="immobilier" className="bg-surface">Investissement immobilier</option>
@@ -137,6 +182,10 @@ const ContactPage = () => {
                   Décrivez votre besoin
                 </label>
                 <textarea
+                  required
+                  name="message"
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full bg-transparent input-underline py-4 font-body-lg text-lg md:text-body-lg text-on-surface placeholder:text-outline-variant/30 focus:ring-0 resize-none"
                   placeholder="Expliquez-nous votre situation et vos objectifs..."
                   rows={4}
@@ -152,17 +201,26 @@ const ContactPage = () => {
               >
                 <button
                   type="submit"
-                  className="group flex items-center gap-4 bg-tertiary text-on-tertiary px-10 py-4 font-label-caps text-xs md:text-label-caps uppercase tracking-widest hover:bg-tertiary-fixed-dim transition-all duration-500"
+                  disabled={status === 'loading'}
+                  className="group flex items-center gap-4 bg-tertiary text-on-tertiary px-10 py-4 font-label-caps text-xs md:text-label-caps uppercase tracking-widest hover:bg-tertiary-fixed-dim transition-all duration-500 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Envoyer ma demande
+                  {status === 'loading' ? 'Envoi en cours...' : 'Envoyer ma demande'}
                   <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform duration-300">
-                    arrow_right_alt
+                    {status === 'loading' ? 'sync' : 'arrow_right_alt'}
                   </span>
                 </button>
+                
+                {status === 'success' && (
+                  <p className="mt-4 text-green-500 font-body-sm">Votre message a été envoyé avec succès !</p>
+                )}
+                {status === 'error' && (
+                  <p className="mt-4 text-red-500 font-body-sm">Une erreur est survenue. Veuillez réessayer.</p>
+                )}
               </motion.div>
             </form>
           </div>
         </motion.div>
+
 
         {/* Coordonnées */}
         <div className="lg:col-span-5 flex flex-col gap-8 md:gap-gutter">

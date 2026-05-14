@@ -12,7 +12,7 @@ const Philosophy = () => {
           className="lg:col-span-5"
         >
           <span className="font-label-caps text-tertiary mb-6 block">NOTRE PHILOSOPHIE</span>
-          <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-0 md:mb-12">Le Manifeste de la Rigueur</h2>
+          <h2 className="font-display-lg text-[32px] md:text-display-lg text-on-surface mb-0 md:mb-12 uppercase tracking-tighter">Notre Méthode</h2>
         </motion.div>
         <div className="lg:col-span-7 space-y-10 md:space-y-12">
           <motion.div
@@ -22,11 +22,8 @@ const Philosophy = () => {
             transition={{ duration: 0.8 }}
             className="relative pl-8 md:pl-12 border-l border-tertiary/30"
           >
-            <p className="font-headline-md text-xl md:text-headline-md italic text-on-surface mb-6 leading-snug">
-              "L'excellence n'est pas un acte, mais une habitude de précision chirurgicale appliquée à chaque strate de l'organisation."
-            </p>
-            <p className="font-body-lg text-lg md:text-body-lg text-on-surface-variant leading-relaxed">
-              Chez Étude Viale, nous croyons que chaque problématique recèle une opportunité de croissance. Notre équipe s'immerge dans votre réalité — qu'il s'agisse d'un hôtel, d'un restaurant ou d'une entreprise — pour débloquer votre plein potentiel opérationnel et financier.
+            <p className="font-headline-md text-xl md:text-headline-md italic text-on-surface leading-snug">
+              Une précision chirurgicale appliquée à chaque strate de l'organisation.
             </p>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12 pt-8">

@@ -100,10 +100,10 @@ const AboutPage = () => {
             <h2 className="font-display-lg text-[32px] md:text-headline-lg mb-8 leading-tight">Identifier les Problèmes. Construire les Solutions.</h2>
             <div className="space-y-6 font-body-md text-sm md:text-on-surface-variant leading-relaxed">
               <p>
-                Étude Viale est née d'un constat simple : les entreprises, quelle que soit leur taille, ont besoin d'un regard extérieur expert pour détecter leurs freins et libérer leur potentiel. Notre cabinet met à disposition des équipes pluridisciplinaires capables d'intervenir dans des environnements variés — commerce, hôtellerie, restauration ou industrie.
+                Les entreprises ont besoin d'un regard extérieur expert pour détecter leurs freins et libérer leur potentiel. Étude Viale met à votre disposition des équipes pluridisciplinaires capables d'intervenir dans des environnements variés.
               </p>
               <p>
-                Nous ne nous contentons pas de diagnostiquer. Nous co-construisons des plans d'action concrets, mesurables et adaptés à votre réalité terrain. Notre engagement : des résultats tangibles, pas des rapports oubliés dans un tiroir.
+                Nous co-construisons des plans d'action concrets, mesurables et adaptés à votre réalité terrain. Notre engagement : des résultats tangibles.
               </p>
             </div>
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-outline-variant/20 pt-12">
