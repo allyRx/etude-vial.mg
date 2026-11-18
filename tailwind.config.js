@@ -27,10 +27,10 @@ export default {
               "on-secondary-container": "#acb9cf",
               "on-error": "#690005",
               "surface-container-lowest": "#060e1e",
-              "primary": "#bfc6dd",
+              "primary": "#ff0000",
               "on-tertiary-fixed": "#241a05",
               "background": "#0b1324",
-              "surface-tint": "#bfc6dd",
+              "surface-tint": "#ff0000",
               "on-surface-variant": "#c6c6cd",
               "error-container": "#93000a",
               "surface-container-highest": "#2d3547",
@@ -54,7 +54,7 @@ export default {
               "on-primary-container": "#787e94",
               "surface-container-low": "#131b2c",
               "on-surface": "#dae2fa",
-              "primary-fixed-dim": "#bfc6dd"
+              "primary-fixed-dim": "#ff0000"
       },
       "borderRadius": {
               "DEFAULT": "0.125rem",
